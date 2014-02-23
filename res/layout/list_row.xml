@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListView最左边的缩略图 -->
+
+    <!-- 歌曲名 -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- 歌手名 -->
+
+    <TextView
+        android:id="@+id/creator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="1dip"
+        android:textColor="#343434"
+        android:textSize="10dip" />
+
+    <!-- 歌曲播放时间 -->
+
+
+    <!-- 进入播放 -->
+
+    <ImageView
+        android:id="@+id/search_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/creator"
+        android:layout_below="@+id/search_image"
+        android:gravity="right"
+        android:text="DATE"
+        android:textColor="#000000"
+        android:textSize="10dip"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
